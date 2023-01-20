@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    background-color: #1e1e1e;
+    font-family: 'Raleway';
+  }
+  
+  #logo {
+    margin: 3rem 0 0 3rem;
+  }
+  
+  #form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h2 {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 2rem 0 3rem 0;
+    padding: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #181818;
+    border-radius: 10px;
+    width: 522px;
+    height: 52px;
+  }
+  
+  label {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+  }
+  
+  #cadastro {
+    width: 524px;
+    background-color: #0c70f2;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  #cadastro:hover {
+    border: 2px solid #ffffff;
+    transition: 1s;
+  }
+  
+  .verificar {
+    display: flex;
+    color: #e73550;
+    font-size: 12px;
+    height: 14px;
+    justify-content: right;
+    visibility: hidden;
+  }
+  
+  #verificarTodos {
+    display: flex;
+    color: #e73550;
+    font-size: 12px;
+    text-align: left;
+    visibility: hidden;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .success {
+    display: flex;
+    color: #0f7b0f;
+    font-size: 12px;
+    text-align: left;
+  }

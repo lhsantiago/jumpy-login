@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jumpy - Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <img id="logo" src="assets/dnc-logo.png" alt="DNC Logo">
+    </header>
+    <main>
+        <div id="form">
+            <img id="jumpy" src="assets/jumpy-logo.png" alt="Jumpy Logo">
+            <h2>Bem vindo ao Jumpy!</h2>
+            <form id="formulario">
+              <div class="input-form">
+                <label for="name">Nome Completo:</label>
+                <input id="name" name="name" type="text" placeholder="Nome completo" onkeyup="checkFields(event)">
+                <span class="verificar"></span>
+              </div>
+              <div class="input-form">
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email" placeholder="Email@email.com" onkeyup="checkFields(event)">
+                <span class="verificar"></span>
+              </div>
+              <div class="input-form">
+                <label for="phone">Telefone:</label>
+                <input id="phone" name="phone" type="phone" placeholder="(00) 00000-0000" onkeyup="checkFields(event)">
+                <span class="verificar"><span>
+              </div>
+              <div class="input-form">
+                <label for="document">CPF:</label>
+                <input id="document" name="document" type="number" placeholder="000.000.000-00" onkeyup="checkFields(event)" minlength="11" maxlength="11">
+                <span class="verificar"></span>
+              </div>
+              <div class="input-form">
+                <label for="password">Senha:</label>
+                <input id="password" name="password" type="password" placeholder="*******************" onkeyup="checkFields(event)">
+                <span class="verificar"></span>
+              </div>
+                <button type="submit" id="cadastro">Cadastrar</button>
+                <span id="verificarTodos"></span>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
